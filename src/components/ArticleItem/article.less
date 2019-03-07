@@ -1,0 +1,21 @@
+.article-item{
+  width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  overflow: hidden;
+  >div{
+    &:first-child{
+      height: 130px;
+      max-width: calc(100% - 240px);
+      float: left;
+    }
+    &:last-child{
+      float: right;
+      margin-right: 20px;
+      width: 200px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
