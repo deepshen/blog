@@ -10,6 +10,15 @@ const config = [
       loader:()=> import('./Home/Home.js'),
       loading:()=><div>加载中</div>
     })
+  },
+  {
+    name: '/hello',
+    path: '/hello',
+    exact: true,
+    component: Loadable({
+      loader: () => import('./User/User.js'),
+      loading:()=><div>加载中</div>
+    })
   }
 ]
 
